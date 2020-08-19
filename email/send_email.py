@@ -12,4 +12,4 @@ with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
     smtp.starttls()
     smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
     msg = f'Subject:{subject}\n\n{body}'
-    smtp.sendmail(EMAIL_ADDRESS, "RECIEVER", msg)
+    smtp.sendmail(EMAIL_ADDRESS, EMAIL_RECIEVER, msg)
