@@ -11,4 +11,4 @@ def home(name):
     return render_template("home.html",title="ABC", name=name)
 
 if __name__ == "__main__":
-  app.run(host="localhost", port=5000, debug=True)
+  app.run(host="0.0.0.0", port=8001, debug=True)
